@@ -269,7 +269,7 @@ export default {
                 })
                 response.on('end', function () {
                     company = JSON.parse(json)
-                    // console.log(company)
+                    console.log(company)
 
                     // format data from history intrinio.com to the format using in HighCharts
                     company.data.forEach(function (str) {
@@ -309,7 +309,6 @@ export default {
     mounted () {
     },
     created () {
-        this.showStockChart()
     }
 }
 
